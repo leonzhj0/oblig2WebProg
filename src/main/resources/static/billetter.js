@@ -1,6 +1,7 @@
 $(function(){
     let billetter = []; //Lager array
     let validering = true;
+    $('#tabellBilletter').hide();
 
     $('#kjopBilett').click(function (){
         $('#tabellBilletter').show(); //Viser tabellheader når kjøp billett knappen trykkes
