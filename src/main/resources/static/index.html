@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobilletter</title>
+    <style>
+        /*Simpel CSS for å gjøre siden bittelit mer aestetisk*/
+        label{
+            display: inline-block;
+            width: 5em;
+        }
+        input{
+            margin: .2%;
+        }
+        #kjopBilett{
+            margin-top: 1em;
+        }
+        div{
+            color: red;
+            font-weight: bold;
+        }
+        #tabellBilletter{
+            display: none;
+        }
+    </style>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+
+<label for="filmer">Velg film:</label>
+<select id="filmer">
+    <option value="fyllTekst">Velg film her</option>
+    <option value="Batman">Batman</option>
+    <option value="Star Wars">Star wars</option>
+    <option value="Focus">Focus</option>
+    <option value="King Arthur">King Arthur</option>
+</select>
+<div class="validering" id="filmValidering"></div><br><br>
+
+<label for="antallBilletter">Antall</label>
+<input type="number" id="antallBilletter" min="0" max="500">
+<div class="validering" id="antallValidering"></div><br><br>
+
+<label for="fornavn">Fornavn</label>
+<input type="text" id="fornavn">
+<div class="validering" id="fornavnValidering"></div><br>
+
+<label for="etternavn">Etternavn</label>
+<input type="text" id="etternavn">
+<div class="validering" id="etternavnValidering"></div><br>
+
+<label for="telefnr">Telefonnr</label>
+<input type="text" id="telefnr">
+<div class="validering" id="telefnrValidering"></div><br>
+
+<label for="epost">Epost</label>
+<input type="email" id="epost">
+<div class="validering" id="epostValidering"></div><br>
+
+<button id="kjopBilett">Kjøp billett</button>
+
+<h2>Alle billetter</h2>
+<table id="tabellBilletter">
+    <tr>
+        <th>Film</th>
+        <th>Antall</th>
+        <th>Fornavn</th>
+        <th>Etternavn</th>
+        <th>Telefonnr</th>
+        <th>Epost</th>
+    </tr>
+</table><br>
+<button id="slettAlle">Slett alle billettene</button>
+<script src="billetter.js"></script>
+</body>
+</html>
