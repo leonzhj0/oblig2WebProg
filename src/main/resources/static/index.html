@@ -23,32 +23,32 @@
                         <option value="Focus">Focus</option>
                         <option value="King Arthur">King Arthur</option>
                     </select>
-                    <div class="validering" id="filmValidering"></div>
+                    <div class="validering, text-danger" id="filmValidering"></div>
                 </div>
                 <div class="form-group">
                     <label for="antallBilletter">Antall</label>
                     <input type="number" class="form-control" id="antallBilletter" min="0" max="500">
-                    <div class="validering" id="antallValidering"></div>
+                    <div class="validering, text-danger" id="antallValidering"></div>
                 </div>
                 <div class="form-group">
                     <label for="fornavn">Fornavn</label>
                     <input type="text" class="form-control" id="fornavn">
-                    <div class="validering" id="fornavnValidering"></div>
+                    <div class="validering, text-danger" id="fornavnValidering"></div>
                 </div>
                 <div class="form-group">
                     <label for="etternavn">Etternavn</label>
                     <input type="text" class="form-control" id="etternavn">
-                    <div class="validering" id="etternavnValidering"></div>
+                    <div class="validering, text-danger" id="etternavnValidering"></div>
                 </div>
                 <div class="form-group">
                     <label for="telefnr">Telefonnr</label>
                     <input type="text" class="form-control" id="telefnr">
-                    <div class="validering" id="telefnrValidering"></div>
+                    <div class="validering, text-danger"  id="telefnrValidering"></div>
                 </div>
                 <div class="form-group">
                     <label for="epost">Epost</label>
                     <input type="email" class="form-control" id="epost">
-                    <div class="validering" id="epostValidering"></div>
+                    <div class="validering, text-danger" id="epostValidering"></div>
                 </div>
             </form>
             <button class="btn btn-primary" id="kjopBilett">Kjøp billett</button>
@@ -56,7 +56,7 @@
         <div class="col-md-8">
             <h2>Alle billetter</h2>
             <table id="tabellBilletter" class="table table-striped">
-                <tr id="tabellRad1">
+                <tr>
                     <th>Film</th>
                     <th>Antall</th>
                     <th>Fornavn</th>
